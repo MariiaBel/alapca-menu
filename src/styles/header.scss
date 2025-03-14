@@ -1,0 +1,65 @@
+@use "./variables-scss.scss" as v;
+.header {
+    position: sticky;
+    top: 0;
+    min-height: 80px;
+    background-color: rgb(var(--cl-bg));
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(var(--cl-bg) / 0.4);
+
+    &__logo {
+        width: 46px;
+        height: 46px;
+    }
+    &__phone {
+        margin-left: auto;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-weight: 500;
+
+        &-text {
+            display: none;
+        }
+    }
+
+    &__burger {
+        &-icon {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-md) {
+    .header {
+        &__phone {
+            margin-left: initial;
+            &-text {
+                display: initial;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-lg) {
+    .header {
+        padding-left: 122px;
+        padding-right: 122px;
+
+        &__burger {
+            display: none;
+        }
+
+        &__phone {
+            margin: 0;
+            order: 1;
+        }
+    }
+}
