@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/logo-DCzZdM1M.svg"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alpaca Menu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+      <script type="module" crossorigin src="./assets/index-IPHjHlr6.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-B910Q6dS.css">
+    </head>
+
+    <body>
+        <main>
+            <header class="header">
+                <svg class="header__logo" aria-label="логотип h.M">
+                    <use href="#icon-logo"></use>
+                </svg>
+                <a
+                    href="tel:+13212223333"
+                    class="header__phone"
+                    aria-label="позвонить по телефону +13212223333"
+                >
+                    <svg class="header__phone-icon icon">
+                        <use href="#icon-phone"></use>
+                    </svg>
+                    <span class="header__phone-text"
+                        >+1 (321) 222 - 33 - 33</span
+                    >
+                </a>
+                <button
+                    type="button"
+                    class="header__burger"
+                    aria-label="открыть/закрыть основное меню сайта"
+                    popovertarget="menu"
+                >
+                    <svg class="header__burger-icon icon">
+                        <use href="#icon-burger"></use>
+                    </svg>
+                </button>
+                <nav class="nav" id="menu" popover>
+                    <ul class="nav__menu">
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-text" href="">Главная</a>
+                        </li>
+                        <li class="nav__menu-item" data-menu-item>
+                            <button
+                                class="nav__menu-text"
+                                type="button"
+                                data-parent
+                            >
+                                Основное меню
+                                <svg class="nav__menu-text-icon">
+                                    <use href="#icon-arrow"></use>
+                                </svg>
+                            </button>
+                            <ul class="nav__menu-child" data-child>
+                                <li class="nav__menu-subitem">
+                                    <a class="nav__menu-text" href=""
+                                        >Заказать верстку</a
+                                    >
+                                </li>
+                                <li class="nav__menu-subitem">
+                                    <a class="nav__menu-text" href=""
+                                        >Отправить макет на проверку</a
+                                    >
+                                </li>
+                                <li class="nav__menu-subitem">
+                                    <a class="nav__menu-text" href=""
+                                        >Хочу работать у вас</a
+                                    >
+                                </li>
+                                <li class="nav__menu-subitem" data-menu-item>
+                                    <button
+                                        class="nav__menu-text"
+                                        type="button"
+                                        data-parent
+                                    >
+                                        <spam class="nav__menu-text-content">
+                                            Есть предложение по работе с
+                                            клиентами</spam
+                                        >
+                                        <svg class="nav__menu-text-icon">
+                                            <use href="#icon-arrow"></use>
+                                        </svg>
+                                    </button>
+                                    <ul class="nav__menu-child" data-child>
+                                        <li class="nav__menu-subitem">
+                                            <a class="nav__menu-text" href=""
+                                                >У меня есть оффер</a
+                                            >
+                                        </li>
+                                        <li class="nav__menu-subitem">
+                                            <a class="nav__menu-text" href=""
+                                                >Сделать партнёром</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-text" href="">Наши сервисы</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-text" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="fullscreen">
+                <picture class="picture picture--main">
+                    <source
+                        srcset="./assets/alpaca-md-Cn-gmLm3.avif, ./assets/alpaca-md_2x-D6c50wjf.avif"
+                        media="(max-width: 768px)"
+                        type="image/avif"
+                    />
+                    <source
+                        srcset="./assets/alpaca-B1eh9LRN.avif, ./assets/alpaca_2x-pywB6_vX.avif 2x"
+                        type="image/avif"
+                    />
+
+                    <source
+                        srcset="./assets/alpaca-md-D8lnorEe.webp, ./assets/alpaca-md_2x-B9T_bJr9.webp"
+                        media="(max-width: 768px)"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="./assets/alpaca-CWyXhwGo.webp, ./assets/alpaca_2x-DzoOvLdV.webp 2x"
+                        type="image/webp"
+                    />
+
+                    <source
+                        srcset="./assets/alpaca-md-BsM9pZeD.jpg, ./assets/img/alpaca/alpaca-md_2x.jpg"
+                        media="(max-width: 768px)"
+                    />
+                    <img
+                        class="picture__img"
+                        src="./assets/alpaca-DDEVeM9V.jpg"
+                        srcset="./assets/alpaca@2x-D0fMNXw5.jpg 2x"
+                        alt="alpaca"
+                        width="375"
+                        height="800"
+                        loading="lazy"
+                    />
+                </picture>
+            </div>
+        </main>
+
+    </body>
+</html>
